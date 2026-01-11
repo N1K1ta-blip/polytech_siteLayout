@@ -1,0 +1,121 @@
+.flexContainer {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.flexContainer_background {
+  width: 100%;
+}
+
+.flexContainer_tree {
+  position: absolute;
+  left: 0;
+  width: 140px;
+  bottom: 60px;
+}
+
+.flexContainer_title {
+  position: absolute;
+  text-align: center;
+  color: green;
+  font-size: 20px;
+  font-weight: 500;
+  right: 60px;
+  top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.flexContainer_fox1 {
+  position: absolute;
+  bottom: 60px;
+  right: -100px;
+  width: 100px;
+  transition: right 0.5s ease;
+}
+
+.flexContainer_fox2 {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  width: 100px;
+  display: none;
+}
+
+.flexContainer:hover .flexContainer_title {
+  opacity: 1;
+}
+
+.flexContainer:hover .flexContainer_fox1 {
+  right: 60px;
+}
+
+.flexContainer_sun {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  animation: moveLeftRight 1.5s infinite alternate ease-in-out;
+  display: none;
+}
+
+.flexContainer_desc {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 500;
+  color: orange;
+  top: 100px;
+  right: 50px;
+  transform: rotate(30deg);
+  display: none;
+}
+
+.flexContainer:active {
+  animation: shake 4s infinite;
+}
+
+.flexContainer:active .flexContainer_fox2,
+.flexContainer:active .flexContainer_sun,
+.flexContainer:active .flexContainer_desc {
+  display: block;
+}
+
+.flexContainer:active .flexContainer_fox1,
+.flexContainer:active .flexContainer_title {
+  display: none;
+}
+
+@keyframes moveLeftRight {
+  from {
+    transform: translateX(-20px);
+  }
+
+  to {
+    transform: translateX(-220px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  25% {
+    transform: rotate(-20deg)
+  }
+
+  50% {
+    transform: rotate(0deg)
+  }
+
+  75% {
+    transform: rotate(20deg)
+  }
+
+  100% {
+    transform: rotate(0deg)
+  }
+}

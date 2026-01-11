@@ -1,0 +1,13 @@
+.galleryBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryBlock img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}

@@ -1,0 +1,154 @@
+.picture {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.screen {
+  width: 130px;
+  height: 70px;
+  border: 5px solid grey;
+  background: linear-gradient(to bottom right, #cce5ff, #629bd4);
+}
+
+.laptop {
+  position: relative;
+  width: 130px;
+  height: 60px;
+}
+
+.corpus {
+  width: 130px;
+  height: 50px;
+  background: linear-gradient(to bottom, #b3b3b3, #999999);
+  transform: skewX(-15deg);
+  position: absolute;
+  right: 6px;
+}
+
+.edge_bottom {
+  width: 132px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  bottom: 0px;
+  right: 11px;
+}
+
+.edge_right {
+  height: 50px;
+  width: 2px;
+  background: black;
+  position: absolute;
+  right: 5px;
+  bottom: 4px;
+  transform: skew(-0.04turn, 80deg);
+}
+
+.corpus_keyboard {
+  width: 110px;
+  height: 6px;
+  background: grey;
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+}
+
+.corpus_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  width: 100%;
+  top: 10px;
+}
+
+.corpus_buttons__item {
+  width: 15px;
+  height: 25px;
+  background: linear-gradient(grey, #e7e7cc);
+  margin: auto;
+}
+
+/*Screen picture*/
+.screen_picture {
+  width: 120px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen_picture .screen {
+  width: 50px;
+  height: 20px;
+  border: 2px solid grey;
+  background: linear-gradient(to bottom right, #cce5ff, #629bd4);
+}
+
+.screen_picture .laptop {
+  position: relative;
+  width: 50px;
+  height: 20px;
+}
+
+.screen_picture .corpus {
+  width: 50px;
+  height: 20px;
+  background: linear-gradient(to bottom, #b3b3b3, #999999);
+  transform: skewX(-15deg);
+  position: absolute;
+  right: 3px;
+}
+
+.screen_picture .edge_bottom {
+  width: 50px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  bottom: -3px;
+  right: 6px;
+}
+
+.screen_picture .edge_right {
+  height: 20px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  right: 2px;
+  bottom: -2px;
+  transform: skew(-0.05turn, 80deg);
+}
+
+.screen_picture .corpus_keyboard {
+  width: 40px;
+  height: 4px;
+  background: grey;
+  position: absolute;
+  bottom: 4px;
+  left: 5px;
+}
+
+.screen_picture .corpus_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  width: 100%;
+  top: 2px;
+}
+
+.screen_picture .corpus_buttons__item {
+  width: 5px;
+  height: 8px;
+  background: linear-gradient(grey, #e7e7cc);
+  margin: auto;
+}

@@ -1,0 +1,21 @@
+.domContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.class1 {
+  background-color: plum;
+}
+
+.class2 {
+  background-color: rgb(132, 155, 51);
+}

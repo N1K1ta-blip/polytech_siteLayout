@@ -1,0 +1,44 @@
+.competition {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+    border: 2px grey dotted;
+    border-radius: 15px;
+    gap: 24px;
+}
+
+.competition_card {
+    display: flex;
+    gap: 24px;
+}
+
+.competition_card__img {
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+}
+
+.competition_card__desc_text {
+    font-size: 14px;
+}
+
+.competition_card__desc_button {
+    border: 0;
+    background-color: transparent;
+    color: #8063F2
+}
+
+.competition_table {
+    display: none;
+}
+
+.competition_table td,
+.competition_table th {
+    padding: 12px;
+}
+
+@media (max-width: 991.98px) {
+    .competition_card {
+        flex-direction: column;
+    }
+}
